@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="86" id="sni-bX-ZHI" customClass="LogTableViewCell" customModule="TravelDiary" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="logCell" rowHeight="86" id="sni-bX-ZHI" customClass="LogTableViewCell" customModule="TravelDiary" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="86"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sni-bX-ZHI" id="xq3-AM-szl">
@@ -25,16 +25,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="q4H-cP-waX">
-                                            <rect key="frame" x="24" y="15" width="366" height="45"/>
+                                            <rect key="frame" x="24" y="15" width="366" height="56"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Title)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AR-Bo-U63">
-                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="31.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCf-pu-m0z">
-                                                    <rect key="frame" x="0.0" y="24.5" width="366" height="20.5"/>
+                                                    <rect key="frame" x="0.0" y="35.5" width="366" height="20.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="(Address)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KqL-vI-V3k">
                                                             <rect key="frame" x="0.0" y="0.0" width="318" height="20.5"/>
@@ -56,6 +56,7 @@
                                     <constraints>
                                         <constraint firstItem="q4H-cP-waX" firstAttribute="leading" secondItem="xq3-AM-szl" secondAttribute="leadingMargin" constant="4" id="1DM-Al-nTd"/>
                                         <constraint firstItem="q4H-cP-waX" firstAttribute="top" secondItem="xq3-AM-szl" secondAttribute="topMargin" constant="4" id="Bva-Rj-CZb"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="q4H-cP-waX" secondAttribute="bottom" constant="4" id="Vbn-te-4h5"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="q4H-cP-waX" secondAttribute="trailing" constant="4" id="qjh-v1-gA2"/>
                                     </constraints>
                                 </tableViewCellContentView>
